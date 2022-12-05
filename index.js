@@ -100,7 +100,7 @@ function stand(){
         message = "You win!!"
         messageEl.textContent = message
         dealerEl.textContent = "Dealers hand: " + ai.num
-    } else if(ai.num > 21){
+    } else if(ai.num > 21 && isAlive == true){
         message = "Dealer busted!"
         messageEl.textContent = message
         dealerEl.textContent = "Dealers hand: " + ai.num
