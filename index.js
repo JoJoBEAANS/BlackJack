@@ -72,10 +72,6 @@ function renderGame() {
     messageEl.textContent = message
     playerEl.textContent = player.name + ": $" + player.chips
     
-    while(ai.num < 17){
-        ai.num += getRandomCard()
-    }
-    
 }
 
 
