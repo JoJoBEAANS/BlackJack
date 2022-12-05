@@ -85,7 +85,9 @@ function newCard() {
 }
 
 function bet(){
-    pool += 5
+    if(pool < player.chips){
+        pool += 5
+    }
     poolEl.textContent = "Pool:" + pool
 }
 
