@@ -44,6 +44,9 @@ function startGame() {
     pool = 0
     poolEl.textContent = "Pool:" + pool
     ai.num = getRandomCard()
+    while(ai.num < 17){
+        ai.num += getRandomCard()
+    }
 }
 
 function renderGame() {
